@@ -36,15 +36,17 @@ export async function login(req, res) {
   {return res.status(404).send({msg:"username doesnt exist"});}
   const success = await bcrypt.compare(Password, usr.Password);
   if (success !== true)return res.status(404).send({msg:"username and password doesnt match"});
-  const token = await sign({ usr }, process.env.JWT_KEY, { expiresIn: "24h" });
+  const token = await sign({ usr }, process.env.JWT_KEY, { expiresIn: "1hr" });
   res.status(201).send({ msg: "Successfully loged in", token });
   res.end();
 }
 
+
+
 export async function home(req, res) {
   try {
     const { name } = req.user.usr;
-    res.status(200).send({ msg: `hello ${name}` });
+    res.status(200).send({ msg: `${name}` });
   } catch (error) {
     res.status(404).send;
   }

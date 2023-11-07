@@ -6,7 +6,7 @@ body {
     height: 75px;
     background-color: #333545;
     display: flex;
-    gap: 350px;
+    gap: 340px;
     margin-bottom: 30px;
   }
   .navbar-left {
@@ -46,6 +46,12 @@ body {
     font-family: system-ui, -apple-system,"Segoe UI",
       "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 400;
+  }
+  .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
   a{
     color: white;
