@@ -10,7 +10,7 @@ async function getDetails(){
     .then((data)=>{
 
         s = "";
-        s += `<img class="banner" src="../images/banner/leo.jpg" alt="" />
+        s += `<img class="banner" src="${data.Movie_Banner}" alt="" />
         <div class="main">
           <div class="main-container-left">
             <div class="image-container">

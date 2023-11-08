@@ -2,6 +2,7 @@ const url = window.location.href;
 const search = new URLSearchParams(url.split("?")[1]);
 const id = search.get("id");
 let pstr = "";
+let bnr = "";
 
 fetch(`http://localhost:3004/BookMyShow/movieDetails/${id}`, { method: "POST" })
   .then((res) => res.json())
@@ -42,7 +43,7 @@ fetch(`http://localhost:3004/BookMyShow/movieDetails/${id}`, { method: "POST" })
           <img src="${pstr}" id="pstr" alt="" style="height: 100%;">
         </div>
         <div class="banner-preview">
-          <img src="${data.Movie_Banner}" alt="" style="width: 100%;">
+          <img src="${bnr}" id="bnr"  alt="" style="width: 100%;">
         </div>
       </div>
       <div>
@@ -60,6 +61,11 @@ fetch(`http://localhost:3004/BookMyShow/movieDetails/${id}`, { method: "POST" })
       const res = await convertToBase64(e.target.files[0]);
       pstr = res;
       document.getElementById("pstr").src = pstr;
+    });
+    document.getElementById("upload-banner-value").addEventListener('change', async (e) => {
+      const res = await convertToBase64(e.target.files[0]);
+      bnr = res;
+      document.getElementById("bnr").src = bnr;
     });
 
     
@@ -84,7 +90,8 @@ fetch(`http://localhost:3004/BookMyShow/movieDetails/${id}`, { method: "POST" })
           Rating,
           Release_Date,
           Description,
-          Movie_Poster: pstr,
+          Movie_Poster:pstr,
+          Movie_Banner:bnr
         }),
       })
       .then((res) => {
