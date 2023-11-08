@@ -22,7 +22,7 @@ async function getMovies() {
     } else {
       fetch("http://localhost:3004/BookMyShow/home", {
         headers: { Authorization: `Bearer ${value}` },
-      })
+      })  
         .then((res) => res.json())
         .then((data) => {
           const { msg } = data;

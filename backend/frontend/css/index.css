@@ -1,0 +1,437 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    height: 75px;
+    background-color: #333545;
+    display: flex;
+    gap: 340px;
+    margin-bottom: 30px;
+    width: 100vw;
+  }
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    margin-left: 110px;
+    gap: 10px;
+  }
+  .bklogo {
+    width: 150px;
+  }
+  .navbar-search {
+    width: 500px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    font-size: medium;
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .kochi,.name {
+    color: white;
+    font-size: 17px;
+    font-family: system-ui, -apple-system, "Segoe UI",
+      "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .sign-in {
+    width: 75px;
+    height: 30px;
+    background-color: #f84464;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-family: system-ui, -apple-system,"Segoe UI",
+      "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+  }
+  .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+   a:visited{
+    color: white;
+  }
+  .burger-bar {
+    width: 40px;
+  }
+  .Movies {
+    font-size: 35px;
+    font-family: "Tilt Neon", sans-serif;
+    margin-left: 30px;
+  }
+  .card-container{
+      padding-left: 200px;
+  }
+  .card-sub-container{
+      margin-top: 40px;
+      width: 85%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+  }
+  .card{
+      height: 480px;
+      
+  }
+  .card-img{
+      width: 250px;
+      border-radius: 10px;
+  }
+  .discription{
+      margin-top: 5px;
+  }
+  .film-name{
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+  }
+  .film{
+      margin-bottom: 8px;
+  }
+  .genre{
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      font-size: 16px; 
+      color: gray;
+  }
+  @media(min-width:300px) and (max-width:575.98px){
+    .navbar {
+    height: 75px;
+    background-color: #333545;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 10px;
+    width: 100vw;
+  }
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 8px;
+  }
+  .bklogo {
+    width: 70px;
+  }
+  .navbar-search {
+    width: 140px;
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+    font-size:10px;
+  }
+  .burger-bar {
+    width: 15px;
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .kochi,.name {
+    color: white;
+    font-size: 10px;
+    font-family: system-ui, -apple-system, "Segoe UI",
+      "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .sign-in {
+    width: 60px;
+    height: 25px;
+    background-color: #f84464;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-family: system-ui, -apple-system,"Segoe UI",
+      "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+  }
+  .Movies {
+    font-size: 20px;
+    font-family: "Tilt Neon", sans-serif;
+    margin-left: 30px;
+  }
+  .card-container{
+      padding-left: 100px;
+  }
+  .card-sub-container{
+      margin-top: 40px;
+      width: 95%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+
+  } @media(min-width:576px) and (max-width:768px){
+    .navbar {
+    height: 75px;
+    background-color: #333545;
+    display: flex;
+    gap: 60px;
+    margin-bottom: 10px;
+    width: 100vw;
+    transition: 1s;
+  }
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    gap: 8px;
+  }
+  .bklogo {
+    width: 100px;
+  }
+  .burger-bar {
+    width: 17px;
+  }
+  .navbar-search {
+    width: 240px;
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+    font-size:10px;
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .kochi,.name {
+    color: white;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, "Segoe UI",
+      "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .sign-in {
+    width: 60px;
+    height: 25px;
+    background-color: #f84464;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-family: system-ui, -apple-system,"Segoe UI",
+      "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+  }
+  .Movies {
+    font-size: 25px;
+    font-family: "Tilt Neon", sans-serif;
+    margin-left: 30px;
+  }
+  .card-container{
+      padding-left: 100px;
+  }
+  .card-sub-container{
+      margin-top: 40px;
+      width: 95%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+  }
+  
+ @media(min-width:769px) and (max-width:992px){
+  .navbar {
+  height: 75px;
+  background-color: #333545;
+  display: flex;
+  gap: 100px;
+  margin-bottom: 10px;
+  width: 100vw;
+  transition: 1s;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
+  gap: 8px;
+}
+.bklogo {
+  width: 120px;
+}
+.navbar-search {
+  width: 350px;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  font-size:10px;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.kochi,.name {
+  color: white;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+.sign-in {
+  width: 60px;
+  height: 25px;
+  background-color: #f84464;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-family: system-ui, -apple-system,"Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+.name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+ a:visited{
+  color: white;
+}
+.burger-bar {
+  width: 20px;
+}
+.Movies {
+  font-size: 25px;
+  font-family: "Tilt Neon", sans-serif;
+  margin-left: 30px;
+}
+.card-container{
+    padding-left: 100px;
+}
+}
+@media(min-width:993px) and (max-width:1200px){
+  .navbar {
+  height: 75px;
+  background-color: #333545;
+  display: flex;
+  gap: 180px;
+  margin-bottom: 10px;
+  width: 100vw;
+  transition: 1s;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin-left: 65px;
+  gap: 8px;
+}
+.bklogo {
+  width: 130px;
+}
+.navbar-search {
+  width: 420px;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  font-size:10px;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.kochi,.name {
+  color: white;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, "Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+.sign-in {
+  width: 75px;
+  height: 30px;
+  background-color: #f84464;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-family: system-ui, -apple-system,"Segoe UI",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+.name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+ a:visited{
+  color: white;
+}
+.burger-bar {
+  width: 20px;
+}
+.Movies {
+  font-size: 25px;
+  font-family: "Tilt Neon", sans-serif;
+  margin-left: 30px;
+}
+.card-container{
+    padding-left: 100px;
+}
+}
+@media(min-width:1201px) and (max-width:1400px){
+  .navbar {
+    height: 75px;
+    background-color: #333545;
+    display: flex;
+    gap: 270px;
+    margin-bottom: 30px;
+    width: 100vw;
+  }
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    margin-left: 110px;
+    gap: 10px;
+  }
+  .bklogo {
+    width: 150px;
+  }
+  .navbar-search {
+    width: 450px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    font-size: medium;
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .kochi,.name {
+    color: white;
+    font-size: 17px;
+    font-family: system-ui, -apple-system, "Segoe UI",
+      "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .sign-in {
+    width: 75px;
+    height: 30px;
+    background-color: #f84464;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-family: system-ui, -apple-system,"Segoe UI",
+      "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+  }
+  .burger-bar {
+    width: 40px;
+  }
+}
