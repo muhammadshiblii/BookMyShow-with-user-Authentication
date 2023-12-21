@@ -5,7 +5,7 @@ async function getDetails(){
       var urlParams = new URLSearchParams(url.split("?")[1]);
       var id = urlParams.get("id");
 
-    fetch(`http://localhost:3004/BookMyShow/movieDetails/${id}`,{method:"POST"})
+    fetch(`http://localhost:3033/BookMyShow/movieDetails/${id}`,{method:"POST"})
     .then((res)=>res.json())
     .then((data)=>{
 
@@ -86,7 +86,7 @@ function deleteMovie(){
     var urlParams = new URLSearchParams(url.split("?")[1]);
     var id = urlParams.get("id");
 
-fetch(`http://localhost:3004/BookMyShow/deleteMovie/${id}`,{
+fetch(`http://localhost:3033/BookMyShow/deleteMovie/${id}`,{
     method:"DELETE",
   }).then((data)=>{
     if(data.status==200){

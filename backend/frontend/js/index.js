@@ -1,5 +1,5 @@
 async function getMovies() {
-  const Movie = await fetch("http://localhost:3004/BookMyShow/movies");
+  const Movie = await fetch("http://localhost:3033/BookMyShow/movies");
   const data = await Movie.json();
   s = "";
   data.map((dt) => {
@@ -20,7 +20,7 @@ async function getMovies() {
       v += `<a href="./pages/login.html"><button class="sign-in">Login</button></a>`;
       document.getElementById("name").innerHTML = v;
     } else {
-      fetch("http://localhost:3004/BookMyShow/home", {
+      fetch("http://localhost:3033/BookMyShow/home", {
         headers: { Authorization: `Bearer ${value}` },
       })  
         .then((res) => res.json())

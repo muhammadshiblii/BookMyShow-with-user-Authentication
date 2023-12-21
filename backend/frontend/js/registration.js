@@ -19,7 +19,7 @@ document.getElementById("frm").addEventListener("submit",async(e)=>{
   date = date_value.value;
   description = description_value.value;
 
-  fetch("http://localhost:3004/BookMyShow/register", {
+  fetch("http://localhost:3033/BookMyShow/register", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({

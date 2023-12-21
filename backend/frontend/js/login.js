@@ -12,7 +12,7 @@ document.getElementById("btn-login").addEventListener("click",()=>{
           }
           else
           {
-            fetch("http://localhost:3004/BookMyShow/login", {
+            fetch("http://localhost:3033/BookMyShow/login", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({

@@ -4,7 +4,7 @@ const id = search.get("id");
 let pstr = "";
 let bnr = "";
 
-fetch(`http://localhost:3004/BookMyShow/movieDetails/${id}`, { method: "POST" })
+fetch(`http://localhost:3008/BookMyShow/movieDetails/${id}`, { method: "POST" })
   .then((res) => res.json())
   .then((data) => {
     pstr = data.Movie_Poster;
@@ -80,7 +80,7 @@ fetch(`http://localhost:3004/BookMyShow/movieDetails/${id}`, { method: "POST" })
       const Release_Date = document.getElementById("release-date-value").value;
       const Description = document.getElementById("textarea-value").value;
 
-      fetch(`http://localhost:3004/BookMyShow/editDetails/${id}`, {
+      fetch(`http://localhost:3033/BookMyShow/editDetails/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

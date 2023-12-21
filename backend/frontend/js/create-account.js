@@ -5,7 +5,7 @@ document.getElementById("btn-submit").addEventListener("click",()=>{
     let Password=document.getElementById("password").value
 
 
-    fetch("http://localhost:3004/BookMyShow/adduser", {
+    fetch("http://localhost:30033/BookMyShow/adduser", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
